@@ -68,10 +68,10 @@ class Test_Lambdatest(BasicTest):
         self.driver.find_element(By.ID, 'website').send_keys("lambda-test.com")
         country = Select(self.driver.find_element(By.NAME, 'country'))
         country.select_by_visible_text("United States")
-        self.driver.find_element(By.ID, 'inputCity').send_keys("Uluru")
+        self.driver.find_element(By.ID, 'inputCity').send_keys("Kodad")
         self.driver.find_element(By.ID, 'inputAddress1').send_keys("near petrol bunk")
         self.driver.find_element(By.ID, 'inputAddress2').send_keys("jambalaya street")
-        self.driver.find_element(By.ID, 'inputState').send_keys("Andhra Pradesh")
+        self.driver.find_element(By.ID, 'inputState').send_keys("Telangana")
         self.driver.find_element(By.ID, 'inputZip').send_keys("534112")
         self.driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
         msg = "Thanks for contacting us, we will get back to you shortly."
